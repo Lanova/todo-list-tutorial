@@ -39,7 +39,7 @@ Nothing else is changed in the `todo-input` component. The events emitted from `
 Now all we need to do is catch the event in the parent component and attach logic to it. Go to the `app-root` component and bind to the `submit` event in the `<app-todo-input>` component:
 
 ```markup
-<app-todo-input (submit)="addItem($event)"></todo-input>
+<app-todo-input (submit)="addItem($event)"></app-todo-input>
 ```
 
 Now all that's left is to implement the `addItem` method, which receives a string and adds it to the list:
